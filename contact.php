@@ -1,9 +1,10 @@
 <?php
 $PAGE_TITLE = "Contact";
 $ACTIVE_PAGE = "contact.php";
-include __DIR__ . "/partials/header.php";
+include __DIR__ . "/includes/header.php";
 ?>
-<section class="card">
+
+<div class="card">
   <h2>Contact Us</h2>
   <p>Have questions? Reach out using the form below. In Stage 2 we will wire this up to a PHP mailer or store messages in the DB.</p>
   <form method="post" action="#" onsubmit="event.preventDefault(); alert('Stage 1: no backend yet.');">
@@ -17,7 +18,7 @@ include __DIR__ . "/partials/header.php";
         <input id="email" name="email" type="email" class="input" required>
       </div>
     </div>
-    <div style="margin-top:1rem;">
+    <div class="mt-1">
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="4" class="input" required></textarea>
     </div>
@@ -25,5 +26,5 @@ include __DIR__ . "/partials/header.php";
       <button class="btn" type="submit">Send (disabled in Stage 1)</button>
     </div>
   </form>
-</section>
-<?php include __DIR__ . "/partials/footer.php"; ?>
+</div>
+<?php include __DIR__ . "/includes/footer.php"; ?>

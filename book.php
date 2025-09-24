@@ -1,9 +1,10 @@
 <?php
 $PAGE_TITLE = "Book a Table";
 $ACTIVE_PAGE = "book.php";
-include __DIR__ . "/partials/header.php";
+include __DIR__ . "/includes/header.php";
 ?>
-<section class="card">
+
+<div class="card">
   <h2>Book a Table</h2>
   <p>This is the skeleton form. In Stage 2, it will POST to a PHP handler that inserts into MySQL.</p>
   <form method="post" action="#" onsubmit="event.preventDefault(); alert('Stage 1: no backend yet.');">
@@ -41,14 +42,14 @@ include __DIR__ . "/partials/header.php";
         <input id="time" name="time" type="time" class="input" required>
       </div>
     </div>
-    <div style="margin-top:1rem;">
+    <div class="mt-1">
       <label for="note">Notes</label>
       <textarea id="note" name="note" rows="3" class="input" placeholder="Allergies, seating preference, etc."></textarea>
     </div>
     <div class="form-actions">
       <button class="btn" type="submit">Submit (disabled in Stage 1)</button>
-      <a href="/index.php" class="btn" style="background: var(--accent-2); color: #fff; text-decoration: none;">Back Home</a>
+      <a href="index.php" class="btn btn-secondary">Back Home</a>
     </div>
   </form>
-</section>
-<?php include __DIR__ . "/partials/footer.php"; ?>
+</div>
+<?php include __DIR__ . "/includes/footer.php"; ?>

@@ -1,9 +1,10 @@
 <?php
 $PAGE_TITLE = "Menu";
 $ACTIVE_PAGE = "menu.php";
-include __DIR__ . "/partials/header.php";
+include __DIR__ . "/includes/header.php";
 ?>
-<section class="card">
+
+<div class="card">
   <h2>Menu & Specials</h2>
   <div class="grid cols-3">
     <div>
@@ -31,5 +32,5 @@ include __DIR__ . "/partials/header.php";
       </ul>
     </div>
   </div>
-</section>
-<?php include __DIR__ . "/partials/footer.php"; ?>
+</div>
+<?php include __DIR__ . "/includes/footer.php"; ?>

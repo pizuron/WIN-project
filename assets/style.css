@@ -1,43 +1,203 @@
-:root {
-  --bg: #0b0f14;
-  --card: #11161d;
-  --text: #e6edf3;
-  --muted: #9aa5b1;
-  --accent: #2ea043;
-  --accent-2: #1f6feb;
+/* Removed old app shell styles - now using consistent homepage design */
+
+/* Utilities shared across pages */
+.mt-1 {
+  margin-top: 1rem;
 }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; background: var(--bg); color: var(--text); }
-a { color: var(--accent-2); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.container { width: min(1100px, 92%); margin-inline: auto; }
-.site-header { background: #0d131a; border-bottom: 1px solid #17202a; position: sticky; top: 0; z-index: 10; }
-.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
-.brand-title { font-weight: 700; font-size: 1.05rem; color: var(--text); }
-.brand-tagline { color: var(--muted); font-size: 0.85rem; }
-.nav { position: relative; }
-.nav-toggle { display: none; background: var(--card); color: var(--text); border: 1px solid #243447; padding: .5rem .75rem; border-radius: .5rem; }
-.nav-list { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
-.nav-list a { padding: .35rem .6rem; border-radius: .4rem; }
-.nav-list a.active { background: var(--accent-2); color: white; }
-main.container { padding: 2rem 0; }
-.card { background: var(--card); border: 1px solid #17202a; border-radius: 1rem; padding: 1.25rem; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
-.grid { display: grid; gap: 1rem; }
-.grid.cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
-.grid.cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
-.hero { display: grid; gap: 1rem; grid-template-columns: 1.2fr .8fr; align-items: center; }
-.hero h1 { margin: .25rem 0; }
-.btn { display: inline-block; padding: .6rem .9rem; background: var(--accent); color: #08110a; border-radius: .5rem; font-weight: 700; border: 0; cursor: pointer; }
-.btn:hover { filter: brightness(1.05); }
-.input, textarea, select { width: 100%; padding: .65rem .8rem; border-radius: .5rem; border: 1px solid #243447; background: #0d131a; color: var(--text); }
-label { font-size: .9rem; color: var(--muted); }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.form-actions { margin-top: 1rem; display: flex; gap: .75rem; }
-.site-footer { border-top: 1px solid #17202a; padding: 1.25rem 0; color: var(--muted); }
-@media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
-  .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; }
-  .nav-toggle { display: inline-block; }
-  .nav-list { display: none; position: absolute; right: 0; margin-top: .5rem; background: var(--card); padding: .5rem; border: 1px solid #17202a; border-radius: .5rem; }
-  .nav-list.open { display: block; }
+.row-end {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+.btn-secondary {
+  background: var(--accent-2) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* Common styles for all pages */
+:root {
+  /* Neutral, softer palette */
+  --cream: #f5f5f3;   /* page bg (neutral stone) */
+  --ink:   #222222;   /* primary text */
+  --muted: #6f6f6a;   /* secondary text */
+  --line:  #e6e5e1;   /* hairline borders */
+  --accent:#3a3a3a;   /* subtle neutral accent */
+  --accent-2:#8a8a8a; /* muted secondary */
+  --shadow: 0 24px 60px rgba(0,0,0,.10);
+}
+
+html, body { height: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.7 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', ui-serif, Georgia, Cambria, Times, "Times New Roman", serif; margin: 0 0 8px; }
+h1 { letter-spacing: 2px; }
+a { color: inherit; }
+
+/* Consistent styling for all pages - using homepage design */
+
+/* Card styles for app pages */
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.06);
+  margin: 2rem 0;
+}
+
+/* Form styles matching homepage */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.input, textarea, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255,255,255,.8);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: var(--line);
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Page content spacing */
+.front {
+  padding: 56px 0 96px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 980px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid.cols-2,
+  .grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
+.wrap { width: min(1240px, 92%); margin-inline: auto; }
+
+/* Top nav - updated for right alignment */
+header.nav { position: sticky; top: 0; z-index: 30; background: var(--cream); border-bottom: 1px solid var(--line); }
+.nav__inner { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+.brand { font-family: 'Cormorant Garamond', ui-serif, Georgia, Cambria, Times, serif; letter-spacing: 8px; text-decoration: none; font-weight: 700; font-size: 24px; flex-shrink: 0; }
+.menu { display: flex; gap: 28px; justify-content: flex-end; }
+.menu a { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; color: var(--ink); }
+.menu a:hover { opacity: .7; }
+.cta { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 28px; }
+
+/* Hamburger (mobile) */
+.hamburger { display: none; position: relative; width: 40px; height: 32px; background: none; border: none; cursor: pointer; }
+.hamburger span,
+.hamburger::before,
+.hamburger::after { content: ''; position: absolute; left: 6px; right: 6px; height: 2px; background: var(--ink); transition: transform .2s ease, opacity .2s ease; }
+.hamburger::before { top: 8px; }
+.hamburger span { top: 15px; }
+.hamburger::after { top: 22px; }
+.hamburger[aria-expanded="true"]::before { transform: translateY(7px) rotate(45deg); }
+.hamburger[aria-expanded="true"] span { opacity: 0; }
+.hamburger[aria-expanded="true"]::after { transform: translateY(-7px) rotate(-45deg); }
+
+/* Front layout (like the reference) */
+.front { padding: 56px 0 96px; }
+.frontgrid { display: grid; grid-template-columns: 320px 1fr; gap: 36px; align-items: start; }
+
+.side { position: sticky; top: 96px; align-self: start; font-size: 12px; line-height: 1.7; }
+.side .block { margin: 20px 0 28px; }
+.label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); margin-bottom: 10px; }
+.side a.underline { border-bottom: 1px solid var(--ink); text-decoration: none; }
+
+.heroimg { border: 1px solid var(--line); background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.06); }
+.heroimg img { display: block; width: 100%; height: auto; object-fit: cover; min-height: 400px; }
+
+/* Menu sections from the screenshot */
+.menu-sections { margin-top: 60px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.menu-section h3 { font-size: 24px; letter-spacing: 2px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.menu-item { margin-bottom: 20px; }
+.menu-item h4 { font-size: 18px; margin-bottom: 5px; font-weight: 600; }
+.menu-item p { font-size: 15px; color: var(--muted); margin: 0; line-height: 1.5; }
+
+footer { border-top: 1px solid var(--line); color: var(--muted); padding: 30px 0 60px; }
+
+/* Transparent (glassy) reservation popup */
+dialog { border: none; padding: 0; width: min(680px, 92%); border-radius: 14px; background: rgba(255,255,255,.7); box-shadow: var(--shadow); color: var(--ink); backdrop-filter: blur(12px); }
+dialog::backdrop { backdrop-filter: blur(12px) saturate(120%); background: rgba(0,0,0,.25); }
+.modal__head { display: flex; justify-content: space-between; align-items: center; padding: 16px 18px; border-bottom: 1px solid var(--line); }
+.modal__body { padding: 18px; }
+.x { background: none; border: 1px solid var(--line); padding: 6px 10px; border-radius: 8px; cursor: pointer; }
+.field { display: grid; gap: 6px; margin-bottom: 12px; }
+label { font-size: 14px; color: var(--muted); }
+input, select, textarea { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.8); font-family: inherit; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--line); background: #fff; cursor: pointer; transition: all 0.2s ease; }
+.btn:hover { background: var(--line); }
+
+.cta-mobile { display: none; }
+
+@media (max-width: 980px) {
+  .nav__inner { flex-wrap: wrap; gap: 12px; }
+  .brand { order: 1; }
+  .hamburger { display: block; order: 2; }
+  .cta { order: 3; display: none; }
+  .menu { display: none; order: 4; width: 100%; }
+  .menu.is-open { display: flex; flex-direction: column; gap: 18px; background: rgba(245,245,243,.98); backdrop-filter: saturate(120%) blur(6px); padding: 18px 24px 24px; border-top: 1px solid var(--line); z-index: 60; }
+  .menu a { font-size: 18px; letter-spacing: 1.5px; }
+  .frontgrid { grid-template-columns: 1fr; gap: 24px; }
+  .side { position: static; }
+  .menu-sections { grid-template-columns: 1fr; }
+  .menu .cta-mobile { display: block; border-bottom: none; text-align: center; margin-top: 12px; font-size: 18px; }
 }
