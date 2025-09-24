@@ -32,6 +32,17 @@
     }
 
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Menu item description toggle with subtle animation (uses CSS .is-open state)
+    document.querySelectorAll('.menu-item').forEach((item) => {
+      const clickable = item.querySelector('.menu-item-name, .menu-item-content');
+      const desc = item.querySelector('.menu-item-description');
+      if (!clickable || !desc) return;
+
+      clickable.addEventListener('click', () => {
+        item.classList.toggle('is-open');
+      });
+    });
   </script>
 </body>
 </html>

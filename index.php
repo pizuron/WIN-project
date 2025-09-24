@@ -1,4 +1,4 @@
-<?php include __DIR__ . "/includes/header.php"; ?>
+<?php $ACTIVE_PAGE = "index.php"; include __DIR__ . "/includes/header.php"; ?>
 
     <div class="frontgrid">
       <!-- Left column (like the reference) -->

@@ -16,13 +16,12 @@
     <div class="wrap nav__inner">
       <a class="brand" href="index.php" aria-label="GIANI home">GIANI</a>
       <button class="hamburger" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false"><span></span></button>
-      <a class="cta" href="#book" data-open="book">Reservations</a>
       <nav class="menu" id="primaryNav" aria-label="Primary">
-        <a href="index.php">Home</a>
-        <a href="about.php">About</a>
-        <a href="menu.php">Menu</a>
-        <a href="book.php">Book a Table</a>
-        <a href="contact.php">Contact</a>
+        <a class="cta" href="#book" data-open="book">Reservations</a>
+        <a href="index.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='index.php') ? 'is-active' : ''; ?>">Home</a>
+        <a href="about.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='about.php') ? 'is-active' : ''; ?>">About</a>
+        <a href="menu.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='menu.php') ? 'is-active' : ''; ?>">Menu</a>
+        <a href="contact.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='contact.php') ? 'is-active' : ''; ?>">Contact</a>
         <a href="#book" data-open="book" class="cta-mobile">Reservations</a>
       </nav>
     </div>
