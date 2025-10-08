@@ -1,13 +1,26 @@
 <?php
 $PAGE_TITLE = "Menu";
 $ACTIVE_PAGE = "menu.php";
-include __DIR__ . "/includes/header.php";
+$EMBED = isset($_GET['embed']);
 
 // Include database configuration
 require_once __DIR__ . "/database/db_config.php";
 
 // Get all menu categories
 $categories = getMenuCategories();
+
+if (!$EMBED) {
+  include __DIR__ . "/includes/header.php";
+} else {
+  // Minimal head for embedded view (no header/footer)
+  echo '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" />';
+  echo '<meta name="viewport" content="width=device-width, initial-scale=1" />';
+  echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+  echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'; 
+  echo '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">';
+  echo '<link rel="stylesheet" href="assets/style.css">';
+  echo '</head><body class="front">';
+}
 ?>
 
 <div class="menu-search">
@@ -102,7 +115,7 @@ $categories = getMenuCategories();
     </div>
   <?php endif; ?>
 </div>
-<?php include __DIR__ . "/includes/footer.php"; ?>
+<?php if (!$EMBED) { include __DIR__ . "/includes/footer.php"; } else { echo '</body></html>'; } ?>
 <script>
   (function(){
     const input = document.getElementById('menuSearch');
