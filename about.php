@@ -4,75 +4,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | FlavorTown Restaurant</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+<meta charset="UTF-8" />
+<title>About  | Briscola Italian Restaurant</title>
+<style>
+  body { 
+      font-family: Arial, sans-serif; 
+      max-width: 600px; 
+      margin: 30px auto; 
+      background-color: #fff;
+      color: #333;
+  }
+  h1, h2 { color: green; text-align: center; }
+  h2 { margin-top: 1rem; }
+  p, li { font-size: 16px; line-height: 1.5; }
+  ul { list-style-type: none; padding-left: 0; }
+  nav { text-align: center; margin-bottom: 20px; }
+  nav a { margin: 0 10px; text-decoration: none; color: #f4a261; font-weight: bold; }
+  nav a.active { color: green; }
+  .confirmation-box { 
+      border: 1px solid #ddd; 
+      padding: 20px; 
+      border-radius: 10px; 
+      margin-bottom: 20px; 
+  }
+  .row-end { 
+      display: flex; 
+      justify-content: flex-end; 
+      margin-top: 10px; 
+  }
+  .btn-secondary { 
+      background: #f4a261; 
+      color: #fff; 
+      padding: 8px 16px; 
+      text-decoration: none; 
+      border-radius: 6px; 
+      font-weight: bold; 
+  }
+  footer { 
+      text-align: center; 
+      margin-top: 30px; 
+      color: #777; 
+      font-size: 14px; 
+  }
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>FlavorTown</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="about.php" class="active">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>About Us</h2>
-        <p>Where taste meets tradition. Learn our story below!</p>
-    </section>
+<nav>
+  <a href="index.php">Home</a> |
+  <a href="about.php" class="active">About</a>
+</nav>
 
-    <!-- About Content -->
-    <section class="about-container">
-        <div class="about-text">
-            <h3>Our Story</h3>
-            <p>
-                At FlavorTown, we believe food is more than just a meal—it’s an experience. 
-                Established in 2010, our restaurant brings authentic flavors, locally sourced 
-                ingredients, and a passion for hospitality. 
-            </p>
-            <p>
-                From our chef’s signature dishes to our warm, welcoming ambiance, we aim to create 
-                unforgettable dining memories for every guest. Whether you’re here for a casual 
-                meal or a special celebration, FlavorTown is the perfect destination. 
-            </p>
-        </div>
+<h1>About Us</h1>
 
-        <!-- Embedded Video -->
-        <div class="about-video">
-            <video controls>
-                <source src="videos/restaurant-promo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p class="caption">🍽️ A glimpse of FlavorTown</p>
-        </div>
-    </section>
+<div class="confirmation-box">
+    <p>
+        Welcome to <strong>Briscola Italian Restaurant</strong> — where taste meets tradition. 
+        Briscola has established itself on the Canberra food scene by offering an
+        unpretentious yet stylish approach to an authentic Italian dining experience. At the forefront
+        it’s about the food: simple, wholesome and traditional without being old fashioned.
+        What sets us apart is how we transport you to Italy. Start with an aperitivo to open the
+        palate, enjoy a local or Italian wine varietal and finish with a fragrant & herbal digestive.
+        Briscola seems to suit anyone… corporate luncheons, young couples, families and
+        group functions.
+        Since 2010 the restaurant has been family owned by Italians. It has won a number of ACT
+        Savour Awards including Canberra’s Best Pizzeria in 2014, Canberra’s Best Italian
+        Restaurant 2015 and in 2016 gained accreditation from Accademia Della Cucina Italiana by
+        the Italian Ambassador..
+    </p>
 
-    <!-- Extra Videos (Optional) -->
-    <section class="video-gallery">
-        <h3>Behind the Scenes</h3>
-        <div class="videos">
-            <iframe width="400" height="225" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="Kitchen Tour" frameborder="0" allowfullscreen></iframe>
-            
-            <iframe width="400" height="225" src="https://www.youtube.com/embed/jfKfPfyJRdk" 
-                    title="Customer Experience" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+    <p>
+        Our chefs bring together classic recipes and modern twists, creating meals that leave 
+        a lasting impression. Whether you’re dining in, ordering takeaway, or celebrating a 
+        special moment with us, we aim to make every experience truly flavorful.
+    </p>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> FlavorTown Restaurant. All rights reserved.</p>
-    </footer>
+    <p>
+        Thank you for being a part of our journey. We look forward to serving you soon and making 
+        your day a little more delicious!
+    </p>
+
+    <div class="row-end">
+        <a href="menu.php" class="btn-secondary">Explore Our Menu</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> FlavorTown Restaurant. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
+
+
 
