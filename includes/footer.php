@@ -46,7 +46,7 @@
         item.classList.toggle('is-open');
       });
     });
-    // Vertical reservation sheet (glass pane)
+    // Centered reservation sheet (glass pane)
     function openReserveSheet(){
       if(document.getElementById('reserveSheet')){ document.getElementById('reserveOverlay').style.display='block'; return; }
       const overlay = document.createElement('div');
@@ -54,9 +54,9 @@
       overlay.className = 'sheet-overlay';
       overlay.addEventListener('click', (e)=>{ if(e.target === overlay) closeReserveSheet(); });
 
-      const sheet = document.createElement('aside');
+      const sheet = document.createElement('div');
       sheet.id = 'reserveSheet';
-      sheet.className = 'reserve-sheet';
+      sheet.className = 'center-sheet';
       sheet.innerHTML = `
         <div class="sheet-head">
           <strong>Reserve at GIANNI</strong>
@@ -131,12 +131,9 @@
       openMenuSheet();
     });
 
-    // Wire any Reservations link to the glass reservation sheet (works on all pages)
-    document.querySelectorAll('[data-open="book"]').forEach((el)=>{
-      el.addEventListener('click', function(e){
-        e.preventDefault();
-        openReserveSheet();
-      });
+    // Wire any [data-open="book"] to open centered reservation sheet (works on all pages)
+    document.querySelectorAll('[data-open="book"]').forEach(el=>{
+      el.addEventListener('click', function(e){ e.preventDefault(); openReserveSheet(); });
     });
   </script>
   <script src="assets/chatbot.js"></script>
