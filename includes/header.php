@@ -27,7 +27,6 @@
         <a href="about.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='about.php') ? 'is-active' : ''; ?>">About</a>
         <a href="menu.php" data-menu-open class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='menu.php') ? 'is-active' : ''; ?>">Menu</a>
         <a href="contact.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='contact.php') ? 'is-active' : ''; ?>">Contact</a>
-        <a href="#book" data-open="book" class="cta-mobile">Reservations</a>
       </nav>
     </div>
   </header>
