@@ -22,7 +22,7 @@
       <a class="brand" href="index.php" aria-label="GIANNI home">GIANNI</a>
       <button class="hamburger" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false"><span></span></button>
       <nav class="menu" id="primaryNav" aria-label="Primary">
-        <a class="cta" href="#book" data-open="book">Reservations</a>
+        <a class="cta" href="reservation.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='reservation.php') ? 'is-active' : ''; ?>">Reservations</a>
         <a href="index.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='index.php') ? 'is-active' : ''; ?>">Home</a>
         <a href="about.php" class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='about.php') ? 'is-active' : ''; ?>">About</a>
         <a href="menu.php" data-menu-open class="<?php echo (isset($ACTIVE_PAGE) && $ACTIVE_PAGE==='menu.php') ? 'is-active' : ''; ?>">Menu</a>

@@ -18,7 +18,7 @@
         <div class="block">
           <span class="label">Contact</span>
           <div>
-            Briscola Italian<br/>
+            Gianni Italian<br/>
             <a href="tel:+61262485444" class="underline">(02) 6248 5444</a>
           </div>
         </div>

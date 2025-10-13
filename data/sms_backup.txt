@@ -1,0 +1,13 @@
+=== SMS SENT ===
+To: +61412345678
+Time: 2025-10-13 05:04:17
+Message:
+🍝 GIANNI RESTAURANT
+
+Test SMS Notification
+
+Time: 2025-10-13 05:04:17
+
+This is a test SMS from your booking system!
+========================
+

@@ -1,0 +1,18 @@
+[
+    {
+        "timestamp": "2025-10-13 04:36:15",
+        "booking_id": 4,
+        "to": "+61426615336",
+        "customer_name": "Aashish Adhikari",
+        "status": "sent",
+        "message": "\ud83c\udf5d GIANNI RESTAURANT\n\nBooking Confirmed!\n\n\ud83d\udcc5 Date: 18\/10\/2025\n\ud83d\udd50 Time: 19:45\n\ud83d\udc65 People: 6\n\ud83d\udd11 Booking ID: #4\n\nThank you for choosing Gianni! \ud83c\uddee\ud83c\uddf9\nCall (02) 6248 5444 for changes."
+    },
+    {
+        "timestamp": "2025-10-13 05:01:22",
+        "booking_id": 5,
+        "to": "+61426615336",
+        "customer_name": "Aashish Adhikari",
+        "status": "sent",
+        "message": "\ud83c\udf5d GIANNI RESTAURANT\n\nBooking Confirmed!\n\n\ud83d\udcc5 Date: 14\/10\/2025\n\ud83d\udd50 Time: 12:15\n\ud83d\udc65 People: 4\n\ud83d\udd11 Booking ID: #5\n\nThank you for choosing Gianni! \ud83c\uddee\ud83c\uddf9\nCall (02) 6248 5444 for changes."
+    }
+]

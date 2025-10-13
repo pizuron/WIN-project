@@ -1,0 +1,34 @@
+[
+    {
+        "timestamp": "2025-10-13 04:36:15",
+        "booking_id": 4,
+        "to": "samrat000018@gmail.com",
+        "customer_name": "Aashish Adhikari",
+        "status": "sent",
+        "subject": "Gianni Restaurant - Booking Confirmed!"
+    },
+    {
+        "timestamp": "2025-10-13 05:01:22",
+        "booking_id": 5,
+        "to": "samrat000018@gmail.com",
+        "customer_name": "Aashish Adhikari",
+        "status": "sent",
+        "subject": "Gianni Restaurant - Booking Confirmed!"
+    },
+    {
+        "timestamp": "2025-10-13 05:12:58",
+        "booking_id": 6,
+        "to": "samrat000018@gmail.com",
+        "customer_name": "Aashish Adhikari",
+        "status": "sent",
+        "subject": "Gianni Restaurant - Booking Confirmed!"
+    },
+    {
+        "timestamp": "2025-10-13 05:13:01",
+        "booking_id": 7,
+        "to": "samrat000018@gmail.com",
+        "customer_name": "Aashish Adhikari",
+        "status": "sent",
+        "subject": "Gianni Restaurant - Booking Confirmed!"
+    }
+]

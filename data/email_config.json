@@ -1,0 +1,9 @@
+{
+    "method": "gmail",
+    "gmail_user": "samrat000018@gmail.com",
+    "gmail_pass": "Chopper333$",
+    "mailgun_api": "",
+    "mailgun_domain": "",
+    "sendgrid_api": "",
+    "elastic_api": ""
+}

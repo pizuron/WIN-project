@@ -1,0 +1,17 @@
+=== SMS NOTIFICATION ===
+To: +61426615336
+Time: 2025-10-13 05:01:22
+Message:
+🍝 GIANNI RESTAURANT
+
+Booking Confirmed!
+
+📅 Date: 14/10/2025
+🕐 Time: 12:15
+👥 People: 4
+🔑 Booking ID: #5
+
+Thank you for choosing Gianni! 🇮🇹
+Call (02) 6248 5444 for changes.
+========================
+

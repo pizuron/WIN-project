@@ -1,7 +1,7 @@
--- Briscola Menu SQL (Food + Key Combos / Kids / Selected After-Dinner & N/A drinks)
--- Source: 2024-BRISCOLA-MENU-A3.pdf
+-- Gianni Menu SQL (Food + Key Combos / Kids / Selected After-Dinner & N/A drinks)
+-- Source: 2024-GIANNI-MENU-A3.pdf
 -- Currency: AUD
-CREATE DATABASE IF NOT EXISTS Giani;
+CREATE DATABASE IF NOT EXISTS Gianni;
 
 DROP TABLE IF EXISTS menu_items;
 
